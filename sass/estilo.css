@@ -1,0 +1,124 @@
+* {
+  margin: 4px;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: salmon;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  padding: 15px;
+  display: inline-block;
+}
+
+ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #444;
+}
+
+/* Variables */
+/* SCSS*/
+h1.title {
+  font: normal 24px/1.5 "Open Sans", sans-serif;
+  /* Uso la variable*/
+  color: #F44336;
+}
+
+div.container {
+  color: #F44336;
+  background: #fff;
+  width: 100%;
+  -webkit-box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.contenedor {
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.tarjeta {
+  background-color: #cccccc;
+  border-radius: 15px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.boton {
+  height: 30px;
+  padding: 10px;
+  background-color: rosybrown;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.boton--derecha {
+  position: center;
+}
+/*# sourceMappingURL=estilo.css.map */
+
+
+#pantalones, #pantalones--nuevos{
+  border: 40px  #f00;
+  background-color: #fdd;
+}
+
+#pantalones--nuevos {
+  border-width: 3px;
+  background-color: #fdd;
+  width: 55%;
+}
+
+#pijamas, #pijamas--nuevos{
+  border: 40px  pink;
+  background-color: papayawhip;
+}
+
+#pijamas--nuevos {
+  border-width: 3px;
+  background-color: papayawhip;
+  width: 55%;
+}
+
+#remeras, #remeras--nuevos{
+  border: 40px  pink;
+  background-color: palegoldenrod;
+}
+
+#remeras--nuevos {
+  border-width: 3px;
+  background-color: palegoldenrod;
+  width: 55%;
+}
+
+#footer{
+  background-color: pink;
+  color: #fff;
+  height: 100%;
+  width: 70%;
+}

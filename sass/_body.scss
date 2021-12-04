@@ -1,0 +1,27 @@
+/*body*/
+/*Grilla */
+#pijamas {
+  background-color: aqua;
+}
+
+#pantalones{
+   border: 20px  #f00;
+   background-color: #fdd;
+}
+#pantalones--nuevos{
+  @extend #pantalones;
+  border-width: 3px;
+  background-color: #fdd;
+  width: 10px;
+}
+
+#pijamas{
+  border: 20px  #f00;
+  background-color: #fdd;
+}
+#pijamas--nuevos{
+ @extend #pijamas;
+ border-width: 3px;
+ background-color: #fdd;
+ width: 10px;
+}

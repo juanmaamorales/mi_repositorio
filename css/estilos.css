@@ -1,0 +1,23 @@
+.miestilo {
+    text-align: center;
+}
+@media (max-width: 992px) {
+.miestilo {
+text-align: left;
+}
+}
+@media (min-width: 600px) {
+    div.example {
+    font-size: 80px;
+    }
+    @media (max-width: 600px) {
+    div.example {
+    font-size: 30px;
+    }
+    }
+}
+@media (max-width: 700px) and (min-width: 400px) {
+    .miestilo {
+    text-align: left;
+    }
+}
