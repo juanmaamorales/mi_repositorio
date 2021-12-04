@@ -1,0 +1,147 @@
+
+USUARIO@DESKTOP-KDK4EAH MINGW64 ~/mi_repositorio2 (master)
+$ git log
+commit da0d4d828c14db0ac8c6062038b0df7a98176c09 (HEAD -> master)
+Author: juanmamorales <juanmaaamorales@gmail.com>
+Date:   Fri Dec 3 21:58:39 2021 -0300
+
+    Segunda tanda de archivos
+
+commit ab4de53a27a5e32f1f39d4b37782d5e91c213a2b
+Author: juanmamorales <juanmaaamorales@gmail.com>
+Date:   Fri Dec 3 21:46:44 2021 -0300
+
+    Primer archivo del repositorio
+
+USUARIO@DESKTOP-KDK4EAH MINGW64 ~/mi_repositorio2 (master)
+$ git branch nueva_rama
+
+USUARIO@DESKTOP-KDK4EAH MINGW64 ~/mi_repositorio2 (master)
+$ git branch -l
+* master
+  nueva_rama
+
+USUARIO@DESKTOP-KDK4EAH MINGW64 ~/mi_repositorio2 (master)
+$ git checkout nueva_rama
+Switched to branch 'nueva_rama'
+M       index.html
+
+USUARIO@DESKTOP-KDK4EAH MINGW64 ~/mi_repositorio2 (nueva_rama)
+$ git branch -l
+  master
+* nueva_rama
+
+USUARIO@DESKTOP-KDK4EAH MINGW64 ~/mi_repositorio2 (nueva_rama)
+$ git status
+On branch nueva_rama
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+
+USUARIO@DESKTOP-KDK4EAH MINGW64 ~/mi_repositorio2 (nueva_rama)
+$ git add index.html
+
+USUARIO@DESKTOP-KDK4EAH MINGW64 ~/mi_repositorio2 (nueva_rama)
+$ git commit -m "Agregando texto al html"
+[nueva_rama ab66a5f] Agregando texto al html
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+USUARIO@DESKTOP-KDK4EAH MINGW64 ~/mi_repositorio2 (nueva_rama)
+$ git status
+On branch nueva_rama
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+USUARIO@DESKTOP-KDK4EAH MINGW64 ~/mi_repositorio2 (nueva_rama)
+$ git add index.html
+
+USUARIO@DESKTOP-KDK4EAH MINGW64 ~/mi_repositorio2 (nueva_rama)
+$ git commit -m "Agregando texto al titulo"
+[nueva_rama 4567f7c] Agregando texto al titulo
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+USUARIO@DESKTOP-KDK4EAH MINGW64 ~/mi_repositorio2 (nueva_rama)
+$ git log
+commit 4567f7c0b81be90018aa3c1727116a02aab6c5e1 (HEAD -> nueva_rama)
+Author: juanmamorales <juanmaaamorales@gmail.com>
+Date:   Fri Dec 3 22:27:14 2021 -0300
+
+    Agregando texto al titulo
+
+commit ab66a5fef8c53721ba70052b5bd572c5b26186df
+Author: juanmamorales <juanmaaamorales@gmail.com>
+Date:   Fri Dec 3 22:26:05 2021 -0300
+
+    Agregando texto al html
+
+commit da0d4d828c14db0ac8c6062038b0df7a98176c09 (master)
+Author: juanmamorales <juanmaaamorales@gmail.com>
+Date:   Fri Dec 3 21:58:39 2021 -0300
+
+    Segunda tanda de archivos
+
+commit ab4de53a27a5e32f1f39d4b37782d5e91c213a2b
+Author: juanmamorales <juanmaaamorales@gmail.com>
+Date:   Fri Dec 3 21:46:44 2021 -0300
+
+    Primer archivo del repositorio
+
+USUARIO@DESKTOP-KDK4EAH MINGW64 ~/mi_repositorio2 (nueva_rama)
+$ git checkout 4567f7c0b81be90018aa3c1727116a02aab6c5e1
+Note: switching to '4567f7c0b81be90018aa3c1727116a02aab6c5e1'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 4567f7c Agregando texto al titulo
+
+USUARIO@DESKTOP-KDK4EAH MINGW64 ~/mi_repositorio2 ((4567f7c...))
+$ git branch
+* (HEAD detached at 4567f7c)
+  master
+  nueva_rama
+
+USUARIO@DESKTOP-KDK4EAH MINGW64 ~/mi_repositorio2 ((4567f7c...))
+$ ^C
+
+USUARIO@DESKTOP-KDK4EAH MINGW64 ~/mi_repositorio2 ((4567f7c...))
+$ git checkout master
+Previous HEAD position was 4567f7c Agregando texto al titulo
+Switched to branch 'master'
+
+USUARIO@DESKTOP-KDK4EAH MINGW64 ~/mi_repositorio2 (master)
+$ git branch
+* master
+  nueva_rama
+
+USUARIO@DESKTOP-KDK4EAH MINGW64 ~/mi_repositorio2 (master)
+$ git merge nueva_rama
+Updating da0d4d8..4567f7c
+Fast-forward
+ index.html | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+USUARIO@DESKTOP-KDK4EAH MINGW64 ~/mi_repositorio2 (master)
+$
